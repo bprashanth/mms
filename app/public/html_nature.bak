@@ -1,0 +1,98 @@
+[
+    {
+        "start": 0,
+        "end": 5,
+        "text": "In the beginning, there was HTML...  HyperText Markup Language.  A way to give plain ol' text... some structure.",
+        "asset": "/video/text_html.mp4"
+    },
+    {
+        "start": 5,
+        "end": 10,
+        "text": "Back then...  we had no phones—just dirt roads, radio songs, and big dreams.",
+        "asset": null
+    },
+    {
+        "start": 7,
+        "end": 9,
+        "text": "Then came the web browsers... they gave that structure a face. The web got its backbone.",
+        "asset": "/images/netscape.webp"
+    },
+    {
+    "start": 9,
+    "end": 10,
+    "text": "And with that... the modern internet was born. A place where every document had its place. ",
+    "asset": "/images/google-indexing.jpg"
+    },
+    {
+    "start": 10,
+    "end": 11,
+    "text": "[coughs] Then came Google.  Smart kid on the block.  Learned to read that structure, index it, and make it searchable. Suddenly, the web wasn't a \"library\" anymore... [chuckles] it was an oracle.",
+    "asset": "/images/chatgpticon.png"
+    },
+    {
+        "start": 11,
+        "end": 12,
+        "text": "And then...  ChatGPT. Trained on that same searchable web... Blogs, emails, recipes [chuckles] arguments, dreams... [impressed] all scooped up and learned.",
+        "asset": null
+    },
+    {
+        "start": 12,
+        "end": 13,
+        "text": "[slowly]But y'know... while all this was happening... the world outside was changing.",
+        "asset": null
+    },
+    {
+        "start": 13,
+        "end": 14,
+        "text": "[softly] The fields grew quiet. The rivers... a little warmer.  The trees got fewer. The bugs got rarer.",
+        "asset": null
+    },
+    {
+        "start": 14,
+        "end": 15,
+        "text": "[slowly] There was structure for the web... but not for the wild.",
+        "asset": null
+    },
+    {
+        "start": 15,
+        "end": 16,
+        "text": "No HTML for the chirp of a nightjar. No CSS for a mossy rock. No JavaScript to animate the leopards slinking through the Nilgiris.",
+        "asset": null
+    },
+    {
+        "start": 16,
+        "end": 17,
+        "text": "Much of our knowledge of nature... [frustrated]it's stuck. In PDFs. Field notes. Shapefiles. Old photos. Dusty memories.",
+        "asset": null
+    },
+    {
+        "start": 17,
+        "end": 18,
+        "text": "[whispers]But...  what if we had an internet for nature?",
+        "asset": null
+    },
+    {
+        "start": 18,
+        "end": 19,
+        "text": "[wistfully]Imagine that.. A structured, open \"facebook\" for the oak trees.",
+        "asset": null
+    },
+    {
+        "start": 19,
+        "end": 20,
+        "text": "Technology not built for ads... [slowly]but built for the planet.",
+        "asset": null
+    },
+    {
+        "start": 20,
+        "end": 21,
+        "text": "I'd ask it-... about the Himalayas. About polar bears. About the endangered xyz trees the rain forests need to survive. ",
+        "asset": null
+    },
+    {
+        "start": 21,
+        "end": 22,
+        "text": "And maybe... just maybe... we'd remember how to listen.  [chuckles][whispers]Not just to the web... but to the world.",
+        "asset": null
+    }
+]

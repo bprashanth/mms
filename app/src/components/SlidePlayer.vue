@@ -14,7 +14,11 @@
             <video 
             v-else 
             :src="currentSlide.asset" 
-            controls class="asset-video"/>
+            :autoplay="isPlaying"
+            muted
+            loop
+            class="asset-video"
+            ref="videoRef"/>
         </div>
 
         <p class="slide-text">{{ currentSlide.text }}</p>
@@ -31,29 +35,54 @@ const slides = ref([])
 const currentSlideIndex = ref(0)
 const currentSlide = ref(null)
 const audioRef = ref(null)
+const videoRef = ref(null)
 const isPlaying = ref(false)
-const audioSrc = '/audio/web_intro.mp3'
-
-const isImage = (path) => {
-    console.log('Checking if path is an image: ', path)
-    return path.match(/\.(jpeg|jpg|gif|png|webp)$/i)
-}
+const audioSrc = '/audio/nature_web.mp3'
 
 onMounted(async () => {
-    const rest = await fetch('/html_nature.json')
+    const rest = await fetch('/transcript.json')
     const data = await rest.json()
-    slides.value = data 
+    slides.value = data.map(
+        d => ({
+            start: d.start ?? (d.timestamp ? d.timestamp[0] : 0),
+            end: d.end ?? (d.timestamp ? d.timestamp[1] : 0),
+            text: d.text,
+            asset: d.asset ?? null 
+        })
+    )
     currentSlide.value = slides.value[currentSlideIndex.value]
+
+    setInterval(() => {
+        if (!audioRef.value || !isPlaying.value) return 
+        const currentTime = audioRef.value.currentTime 
+        const index = slides.value.findIndex(
+            slide => currentTime >= slide.start && currentTime < slide.end)
+        if (index !== -1 && index !== currentSlideIndex.value) {
+            currentSlideIndex.value = index
+            currentSlide.value = slides.value[index]
+        }
+    }, 100)
 })
 
 const toggleAudio = () => {
     if (!audioRef.value) return 
     if (isPlaying.value) {
         audioRef.value.pause()
+        if (videoRef.value) {
+            videoRef.value.pause()
+        }
     } else {
         audioRef.value.play()
+        if (videoRef.value) {
+            videoRef.value.play()
+        }
     }
     isPlaying.value = !isPlaying.value
+}
+
+const isImage = (path) => {
+    console.log('Checking if path is an image: ', path)
+    return path.match(/\.(jpeg|jpg|gif|png|webp)$/i)
 }
 </script>
 
@@ -106,5 +135,13 @@ button {
 
 button:hover {
     background: #ffffff30;
+}
+
+select {
+    margin-left: 1rem;
+    background: black;
+    color: white;
+    border: 1px solid white;
+    padding: 0.3rem 0.5rem;
 }
 </style>
