@@ -1,116 +1,191 @@
 [
   {
     "timestamp": [0, 12],
-    "text": " In the beginning, there was HTML, hypertext markup language, a way to give plain old text some structure.",
-    "asset": "/video/text_html.mp4"
+    "displayText": " In the beginning, there was HTML",
+    "fullText": " In the beginning, there was HTML, hypertext markup language, a way to give plain old text some structure.", 
+    "asset": "/video/text_html.mp4",
+    "animation": "typewriter"
   },
   {
     "timestamp": [12, 21],
-    "text": "Back then, we had no phones, just dirt roads, radio songs, and big dreams.",
-    "asset": null
+    "displayText": "Back then, we had no phones, just dirt roads, radio songs, and big dreams.",
+    "fullText": "Back then, we had no phones, just dirt roads, radio songs, and big dreams.",
+    "animation": "fade-in",
+    "asset": "/video/dirt_roads.mp4"
   },
   {
     "timestamp": [21, 28.4],
-    "text": " Then came the web browsers. They gave that structure a face. The web got its backbone."
+    "displayText": " Then came the web browsers.",
+    "fullText": " Then came the web browsers. They gave that structure a face. The web got its backbone.",
+    "asset": "/images/web_browsers.png",
+    "animation": "pulse"
   },
   {
     "timestamp": [28.4, 36.3],
-    "text": " And with that, the modern internet was born, a place where every document had its place."
-  },
-  {
-    "timestamp": [36.3, 38.5],
-    "text": " [coughing]"
+    "displayText": " And with that, the modern internet was born, a place where every document had its place.",
+    "fullText": " And with that, the modern internet was born, a place where every document had its place.",
+    "asset": null,
+    "animation": "slide-in"
   },
   {
     "timestamp": [38.5, 47.08],
-    "text": " Then came Google, smart kid on the block, learned to read that structure, index it and"
+    "displayText": " Then came Google.",
+    "fullText": " Then came Google, smart kid on the block, learned to read that structure, index it and",
+    "asset": null,
+    "animation": "typewriter"
   },
   {
     "timestamp": [47.08, 49.04],
-    "text": " make it searchable."
+    "displayText": " make it searchable.",
+    "fullText": " make it searchable.",
+    "asset": null,
+    "animation": "typewriter"
   },
   {
     "timestamp": [49.04, 53.2],
-    "text": " Suddenly the web wasn't a library anymore."
+    "displayText": " Suddenly the web wasn't a library anymore.",
+    "fullText": " Suddenly the web wasn't a library anymore.",
+    "asset": null,
+    "animation": "typewriter"
   },
   {
     "timestamp": [53.2, 55.92],
-    "text": " It was an oracle."
+    "displayText": " It was an oracle.",
+    "fullText": " It was an oracle.",
+    "asset": null,
+    "animation": "typewriter"
   },
   {
     "timestamp": [55.92, 70.28],
-    "text": " And then, chat GPT, trained on that same searchable web, blogs, emails, recipes, arguments, dreams, all scooped up and"
+    "displayText": " And then, chat GPT",
+    "fullText": " And then, chat GPT, trained on that same searchable web, blogs, emails, recipes, arguments, dreams, all scooped up and",
+    "asset": null,
+    "animation": "typewriter"
   },
   {
     "timestamp": [70.28, 71.28],
-    "text": " learned."
+    "displayText": " learned.",
+    "fullText": " learned.",
+    "asset": null,
+    "animation": "typewriter"
   },
   {
     "timestamp": [71.28, 77.92],
-    "text": " But you know, while all this was happening, the world outside was changing."
+    "displayText": "The world outside was changing...",
+    "fullText": " But you know, while all this was happening, the world outside was changing.",
+    "asset": null,
+    "animation": "typewriter"
   },
   {
     "timestamp": [77.92, 80.32],
-    "text": " The fields grew quiet."
+    "displayText": " The fields grew quiet.",
+    "fullText": " The fields grew quiet.",
+    "asset": null,
+    "animation": "typewriter"
   },
   {
     "timestamp": [80.32, 83],
-    "text": " The rivers, a little warmer."
+    "displayText": " The rivers, a little warmer.",
+    "fullText": " The rivers, a little warmer.",
+    "asset": null,
+    "animation": "typewriter"
   },
   {
     "timestamp": [83, 88.1],
-    "text": " The trees got fewer. the bugs got rarer."
+    "displayText": " The trees got fewer. the bugs got rarer.",      
+    "fullText": " The trees got fewer. the bugs got rarer.",      
+    "asset": null,
+    "animation": "typewriter"
   },
   {
     "timestamp": [88.1, 92.1],
-    "text": " There was structure for the web, but not for the wild."
+    "displayText": " There was structure for the web, but not for the wild.",
+    "fullText": " There was structure for the web, but not for the wild.",
+    "asset": null,
+    "animation": "typewriter"
   },
   {
     "timestamp": [92.1, 100.9],
-    "text": " No HTML for the chirp of a night jaw, no CSS for a mossy rock, no Java script to animate"
+    "displayText": " No HTML for the chirp of a night jaw, no CSS for a mossy rock, no Java script to animate",
+    "fullText": " No HTML for the chirp of a night jaw, no CSS for a mossy rock, no Java script to animate",
+    "asset": null,
+    "animation": "typewriter"
   },
   {
     "timestamp": [100.9, 108.2],
-    "text": " the leopards linking through the nigguries. Much of our knowledge of nature, it's stuck,"
+    "displayText": " the leopards linking through the nigguries. Much of our knowledge of nature, it's stuck,",
+    "fullText": " the leopards linking through the nigguries. Much of our knowledge of nature, it's stuck,",
+    "asset": null,
+    "animation": "typewriter"
   },
   {
     "timestamp": [108.2, 113.2],
-    "text": " and PDFs, field notes, shape files, old photos,"
+    "displayText": " and PDFs, field notes, shape files, old photos,",
+    "fullText": " and PDFs, field notes, shape files, old photos,",
+    "asset": null,
+    "animation": "typewriter"
   },
   {
     "timestamp": [113.6, 114.92],
-    "text": " dusty memories."
+    "displayText": " dusty memories.",
+    "fullText": " dusty memories.",
+    "asset": null,
+    "animation": "typewriter"
   },
   {
     "timestamp": [115.88, 119.88],
-    "text": " But what if we had an internet for nature?"
+    "displayText": " But what if we had an internet for nature?",
+    "fullText": " But what if we had an internet for nature?",
+    "asset": null,
+    "animation": "typewriter"
   },
   {
     "timestamp": [120.84, 124.76],
-    "text": " Imagine that, a structured, open Facebook"
+    "displayText": " Imagine that, a structured, open Facebook",
+    "fullText": " Imagine that, a structured, open Facebook",
+    "asset": null,
+    "animation": "typewriter"
   },
   {
     "timestamp": [124.76, 126.44],
-    "text": " for the oak trees,"
+    "displayText": " for the oak trees,",
+    "fullText": " for the oak trees,",
+    "asset": null,
+    "animation": "typewriter"
   },
   {
     "timestamp": [126.44, 131.52],
-    "text": " technology not built for ads, but built for the planet."
+    "displayText": " technology not built for ads, but built for the planet.",     
+    "fullText": " technology not built for ads, but built for the planet.",     
+    "asset": null,
+    "animation": "typewriter"
   },
   {
     "timestamp": [131.52, 140.56],
-    "text": " I'd ask it about the Himalayas, about polar bears, about the endangered XYZ trees the rainforests"
+    "displayText": " I'd ask it about the Himalayas, about polar bears, about the endangered XYZ trees the rainforests",
+    "fullText": " I'd ask it about the Himalayas, about polar bears, about the endangered XYZ trees the rainforests",
+    "asset": null,
+    "animation": "typewriter"
   },
   {
     "timestamp": [140.56, 142.8],
-    "text": " need to survive."
+    "displayText": " need to survive.",
+    "fullText": " need to survive.",
+    "asset": null,
+    "animation": "typewriter"
   },
   {
     "timestamp": [142.8, 147.76],
-    "text": " And maybe, just maybe, we'd remember how to listen,"
+    "displayText": " And maybe, just maybe, we'd remember how to listen,",
+    "fullText": " And maybe, just maybe, we'd remember how to listen,",
+    "asset": null,
+    "animation": "typewriter"
   },
   {
     "timestamp": [148.64, 152.48],
-    "text": " not just to the web, but to the world."
+    "displayText": " not just to the web, but to the world.",
+    "fullText": " not just to the web, but to the world.",
+    "asset": null,
+    "animation": "typewriter"
   }
 ]
