@@ -1,32 +1,14 @@
 [
     {
         "start": 0,
-        "end": 1,
-        "text": "In the beginning, there was HTML, or HyperText Markup Language - a type of language that provides structure to plain text documents. ",
+        "end": 5,
+        "text": "In the beginning, there was HTML...  HyperText Markup Language.  A way to give plain ol' text... some structure.",
+        "asset": "/video/text_html.mp4"
+    },
+    {
+        "start": 5,
+        "end": 10,
+        "text": "Back then...  we had no phones—just dirt roads, radio songs, and big dreams.",
         "asset": null
-    },
-    {
-        "start": 1,
-        "end": 2,
-        "text": "This structure allowed web browsers to display them in an organized way, forming the backbone of the world wide web.",
-        "asset": "/images/netscape.webp"
-    },
-    {
-        "start": 2,
-        "end": 3,
-        "text": "In other words, the modern internet was born ..with.. structure.",
-        "asset": null
-    },
-    {
-    "start": 3,
-    "end": 4,
-    "text": "Google learned to index this structure. It crawled, ranked, and made the web searchable.",
-    "asset": "/images/google-indexing.jpg"
-    },
-    {
-    "start": 4,
-    "end": 5,
-    "text": "And then came ChatGPT — trained on this web of documents, conversations, and code.",
-    "asset": "/images/chatgpticon.png"
     }
 ]
