@@ -25,10 +25,11 @@
             :src="currentSlide.asset" alt="slide asset" 
             class="asset-image" />
 
+            <!-- TODO(prashanth@): Add a !isForecePaused here to pause video?  -->
             <video 
             v-else 
             :src="currentSlide.asset" 
-            :autoplay="isPlaying"
+            :autoplay="isPlaying" 
             muted
             loop
             class="asset-video"
@@ -51,6 +52,9 @@ const currentSlide = ref(null)
 const audioRef = ref(null)
 const videoRef = ref(null)
 const isPlaying = ref(false)
+const isForcePaused = ref(false)
+const lastPausedIndex = ref(null)
+
 const audioSrc = '/audio/nature_web.mp3'
 
 // Progress bar for audio 
@@ -68,7 +72,8 @@ onMounted(async () => {
             text: d.displayText,
             fullText: d.fullText,
             asset: d.asset ?? null, 
-            animation: d.animation ?? null
+            animation: d.animation ?? null,
+            pauseDuration: d.pauseDuration ?? null
         })
     )
     currentSlide.value = slides.value[currentSlideIndex.value]
@@ -88,7 +93,8 @@ onMounted(async () => {
     }
 
     setInterval(() => {
-        if (!audioRef.value || !isPlaying.value) return 
+        if (!audioRef.value || !isPlaying.value && !isForcePaused.value) return 
+
         const currentTime = audioRef.value.currentTime 
         
         // Update progress (but only if not currently seeking)
@@ -96,14 +102,39 @@ onMounted(async () => {
             progress.value = currentTime
         }
         
-        const index = slides.value.findIndex(
-            slide => currentTime >= slide.start && currentTime < slide.end)
+        const index = getActiveSlideIndex(currentTime)
+        console.log('find index returned index: ', index, 'currentSlideIndex: ', currentSlideIndex.value)
         if (index !== -1 && index !== currentSlideIndex.value) {
             currentSlideIndex.value = index
             currentSlide.value = slides.value[index]
         }
+
+        const slide = slides.value[index]
+        const shouldPause = slide && slide.pauseDuration && lastPausedIndex.value !== index
+        if (shouldPause) {
+            isForcePaused.value = true
+            lastPausedIndex.value = index
+            audioRef.value.pause()
+
+            setTimeout(() => {
+                isForcePaused.value = false
+                if (!isPlaying.value) return 
+                audioRef.value.play()
+            }, slide.pauseDuration * 1000)
+        } 
     }, 100)
 })
+
+const getActiveSlideIndex = (time) => {
+    return slides.value.findIndex((slide, idx) => {
+        if (slide.pauseDuration) {
+            const pauseEnd = slide.start + slide.pauseDuration
+            return time >= slide.start && time < pauseEnd 
+        } else {
+            return time >= slide.start && time < slide.end 
+        }
+    })
+}
 
 const toggleAudio = () => {
     if (!audioRef.value) return 
