@@ -172,14 +172,27 @@ const formatTime = (seconds) => {
 }
 
 .asset-wrapper {
-    max-width: 80%;
+    /* max-width: 80%; */
+    height: 600px;
+    width: 400px;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 2rem;
+    background-color: #000; /* Dark background to fill any gaps */
 }
 
 .asset-image,
 .asset-video {
-    max-width: 100%;
-    max-height: 60vh;
+    /* max-width: 100%;
+    max-height: 60vh; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Changed back to cover to ensure content fills container */
+    border-radius: 12px;
+    border: 1px solid #ffffff20;
 }
 .controls {
     position: absolute;
@@ -226,7 +239,7 @@ input[type="range"] {
 }
 
 .slide-in {
-    animation: slideIn 0.8s ease forwards;
+    animation: slideIn 1s ease forwards;
 }
 
 .typewriter {
@@ -243,7 +256,7 @@ input[type="range"] {
     from { opacity: 0; }
     to { opacity: 1; }
 }
-@keyframes slideId {
+@keyframes slideIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }

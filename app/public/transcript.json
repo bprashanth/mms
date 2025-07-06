@@ -11,69 +11,125 @@
     "displayText": "Back then, we had no phones, just dirt roads, radio songs, and big dreams.",
     "fullText": "Back then, we had no phones, just dirt roads, radio songs, and big dreams.",
     "animation": "fade-in",
-    "asset": "/video/dirt_roads.mp4"
+    "asset": "/video/volcano.mp4"
   },
   {
-    "timestamp": [21, 28.4],
+    "timestamp": [21, 26.4],
     "displayText": " Then came the web browsers.",
     "fullText": " Then came the web browsers. They gave that structure a face. The web got its backbone.",
-    "asset": "/images/web_browsers.png",
+    "asset": "/video/mainframe.mp4",
     "animation": "pulse"
   },
   {
-    "timestamp": [28.4, 36.3],
-    "displayText": " And with that, the modern internet was born, a place where every document had its place.",
-    "fullText": " And with that, the modern internet was born, a place where every document had its place.",
-    "asset": null,
+    "timestamp": [28.4, 32.0],
+    "displayText": " And with that, the modern internet was born.",
+    "fullText": " And with that, the modern internet was born, a place where",
+    "asset": "/video/scrolling_0.mp4",
     "animation": "slide-in"
   },
   {
-    "timestamp": [38.5, 47.08],
-    "displayText": " Then came Google.",
-    "fullText": " Then came Google, smart kid on the block, learned to read that structure, index it and",
+    "timestamp": [33.0, 40.0],
+    "displayText": "a place where every document had its place",
+    "fullText": "a place where every document had its place",
     "asset": null,
     "animation": "typewriter"
   },
   {
+    "timestamp": [41.0, 46],
+    "displayText": " Then came Google.",
+    "fullText": " Then came Google, smart kid on the block, learned to read that structure",
+    "asset": "/video/google_23.mp4",
+    "animation": "slide-in"
+  },
+  {
     "timestamp": [47.08, 49.04],
-    "displayText": " make it searchable.",
-    "fullText": " make it searchable.",
+    "displayText": "make it searchable.",
+    "fullText": ",index it and make it searchable.",
     "asset": null,
-    "animation": "typewriter"
+    "animation": "slide-in"
   },
   {
     "timestamp": [49.04, 53.2],
     "displayText": " Suddenly the web wasn't a library anymore.",
     "fullText": " Suddenly the web wasn't a library anymore.",
     "asset": null,
-    "animation": "typewriter"
+    "animation": "fade-in"
   },
   {
     "timestamp": [53.2, 55.92],
     "displayText": " It was an oracle.",
     "fullText": " It was an oracle.",
-    "asset": null,
-    "animation": "typewriter"
+    "asset": "/video/oracle_23.mp4",
+    "animation": "pulse"
   },
   {
-    "timestamp": [55.92, 70.28],
+    "timestamp": [55.92, 59.5],
     "displayText": " And then, chat GPT",
-    "fullText": " And then, chat GPT, trained on that same searchable web, blogs, emails, recipes, arguments, dreams, all scooped up and",
-    "asset": null,
+    "fullText": " And then, chat GPT, trained on that same searchable web",
+    "asset": "/video/callcenter_23.mp4",
     "animation": "typewriter"
   },
   {
-    "timestamp": [70.28, 71.28],
-    "displayText": " learned.",
-    "fullText": " learned.",
+    "timestamp": [59.5, 60.5],
+    "displayText": "trained on that same",
+    "fullText": "trained on that same",
     "asset": null,
-    "animation": "typewriter"
+    "animation": "slide-in"
+  },
+  {
+    "timestamp": [60.5, 62.0],
+    "displayText": "searchable web",
+    "fullText": "searchable web",
+    "asset": null,
+    "animation": "pulse"
+  },
+  {
+    "timestamp": [62.0, 63.5],
+    "displayText": "blogs",
+    "fullText": "blogs",
+    "asset": null,
+    "animation": "fade-in"
+  },
+  {
+    "timestamp": [63.5, 64.7],
+    "displayText": "emails",
+    "fullText": "emails",
+    "asset": null,
+    "animation": "fade-in"
+  },
+  {
+    "timestamp": [64.7, 66.3],
+    "displayText": "recipes",
+    "fullText": "recipes",
+    "asset": null,
+    "animation": "fade-in"
+  },
+  {
+    "timestamp": [66.3, 67.3],
+    "displayText": "arguments",
+    "fullText": "arguments",
+    "asset": null,
+    "animation": "fade-in"
+  },
+  {
+    "timestamp": [67.0, 68.4],
+    "displayText": "dreams",
+    "fullText": "dreams",
+    "asset": null,
+    "animation": "fade-in"
+  },
+  {
+    "timestamp": [67.0, 71.28],
+    "displayText": "..all scooped up and learned.",
+    "fullText": "all scooped up and learned.",
+    "asset": "/video/scrolling_1.mp4",
+    "animation": "pulse"
   },
   {
     "timestamp": [71.28, 77.92],
     "displayText": "The world outside was changing...",
-    "fullText": " But you know, while all this was happening, the world outside was changing.",
-    "asset": null,
+    "fullText": "But you know, while all this was happening... the world outside was changing.",
+    "asset": "/video/bear.mp4",
     "animation": "typewriter"
   },
   {
@@ -113,8 +169,8 @@
   },
   {
     "timestamp": [100.9, 108.2],
-    "displayText": " the leopards linking through the nigguries. Much of our knowledge of nature, it's stuck,",
-    "fullText": " the leopards linking through the nigguries. Much of our knowledge of nature, it's stuck,",
+    "displayText": " the leopards linking through the nilgiris. Much of our knowledge of nature, it's stuck,",
+    "fullText": " the leopards linking through the nilgiris. Much of our knowledge of nature, it's stuck,",
     "asset": null,
     "animation": "typewriter"
   },
