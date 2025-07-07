@@ -1,28 +1,42 @@
 [
   {
-    "timestamp": [0, 12],
+    "timestamp": [0, 6],
     "displayText": " In the beginning, there was HTML",
     "fullText": " In the beginning, there was HTML, hypertext markup language, a way to give plain old text some structure.", 
     "asset": "/video/text_html.mp4",
     "animation": "typewriter"
   },
   {
+    "timestamp": [6, 12],
+    "displayText": "a way to give plain old text some structure.",
+    "fullText": "a way to give plain old text some structure.", 
+    "asset": null,
+    "animation": "fade-in"
+  },  
+  {
     "timestamp": [12, 21],
-    "displayText": "Back then, we had no phones, just dirt roads, radio songs, and big dreams.",
+    "displayText": "Back then, we had no phones.",
     "fullText": "Back then, we had no phones, just dirt roads, radio songs, and big dreams.",
     "animation": "fade-in",
-    "asset": "/video/volcano.mp4"
-  },
+    "asset": "/video/nophones.mp4"
+  },  
   {
-    "timestamp": [21, 26.4],
+    "timestamp": [21, 26.0],
     "displayText": " Then came the web browsers.",
     "fullText": " Then came the web browsers. They gave that structure a face. The web got its backbone.",
     "asset": "/video/mainframe.mp4",
     "animation": "pulse"
   },
   {
+    "timestamp": [26.0, 27.4],
+    "displayText": "The web got its backbone.",
+    "fullText": "The web got its backbone.",
+    "asset": null,
+    "animation": "fade-in"
+  },
+  {
     "timestamp": [28.4, 32.0],
-    "displayText": " And with that, the modern internet was born.",
+    "displayText": "",
     "fullText": " And with that, the modern internet was born, a place where",
     "asset": "/video/scrolling_0.mp4",
     "animation": "slide-in"
@@ -42,11 +56,18 @@
     "animation": "slide-in"
   },
   {
-    "timestamp": [47.08, 49.04],
-    "displayText": "make it searchable.",
+    "timestamp": [46.0, 46.5],
+    "displayText": "index it.",
     "fullText": ",index it and make it searchable.",
     "asset": null,
-    "animation": "slide-in"
+    "animation": "typing"
+  },  
+  {
+    "timestamp": [46.5, 49.04],
+    "displayText": "searchable.",
+    "fullText": ",index it and make it searchable.",
+    "asset": null,
+    "animation": "fade-in"
   },
   {
     "timestamp": [49.04, 53.2],
@@ -126,9 +147,23 @@
     "animation": "pulse"
   },
   {
-    "timestamp": [71.28, 77.92],
-    "displayText": "The world outside was changing...",
-    "fullText": "But you know, while all this was happening... the world outside was changing.",
+    "timestamp": [71.28, 74.8],
+    "displayText": "But you know, while all this was happening...",
+    "fullText": "But you know, while all this was happening...",
+    "asset": null,
+    "animation": "fade-in"
+  },
+  {
+    "timestamp": [74.8, 74.8],
+    "displayText": "",
+    "fullText": "",
+    "asset": "/video/bear.mp4",
+    "pauseDuration": 0.8
+  },
+  {
+    "timestamp": [74.29, 77.92],
+    "displayText": "    ",
+    "fullText": "the world outside was changing...",
     "asset": "/video/bear.mp4",
     "animation": "typewriter"
   },
@@ -137,48 +172,76 @@
     "displayText": " The fields grew quiet.",
     "fullText": " The fields grew quiet.",
     "asset": null,
-    "animation": "typewriter"
+    "animation": "fade-in"
   },
   {
     "timestamp": [80.32, 83],
-    "displayText": " The rivers, a little warmer.",
+    "displayText": "The rivers, a little warmer.",
     "fullText": " The rivers, a little warmer.",
-    "asset": null,
-    "animation": "typewriter"
+    "asset": "/video/monkey_drum.mp4",
+    "animation": "fade-in"
   },
   {
-    "timestamp": [83, 88.1],
-    "displayText": " The trees got fewer. the bugs got rarer.",      
-    "fullText": " The trees got fewer. the bugs got rarer.",      
-    "asset": null,
-    "animation": "typewriter"
+    "timestamp": [83, 85.2],
+    "displayText": "The trees got fewer.",      
+    "fullText": " The trees got fewer.",      
+    "asset": "/video/monkey_drum.mp4",
+    "animation": "fade-in"
   },
   {
-    "timestamp": [88.1, 92.1],
-    "displayText": " There was structure for the web, but not for the wild.",
+    "timestamp": [85.2, 88.1],
+    "displayText": "the bugs got rarer.",
+    "fullText": "the bugs got rarer.",
+    "asset": "/video/ladybug.mp4",
+    "animation": "fade-in"
+  },
+  {
+    "timestamp": [88.1, 90.0],
+    "displayText": " There was structure for the web..",
     "fullText": " There was structure for the web, but not for the wild.",
     "asset": null,
-    "animation": "typewriter"
+    "animation": "pulse"
   },
   {
-    "timestamp": [92.1, 100.9],
-    "displayText": " No HTML for the chirp of a night jaw, no CSS for a mossy rock, no Java script to animate",
-    "fullText": " No HTML for the chirp of a night jaw, no CSS for a mossy rock, no Java script to animate",
+    "timestamp": [90.0, 92.1],
+    "displayText": "but not for the wild.",
+    "fullText": "but not for the wild.",
     "asset": null,
-    "animation": "typewriter"
+    "animation": "fade-in"
   },
   {
-    "timestamp": [100.9, 108.2],
-    "displayText": " the leopards linking through the nilgiris. Much of our knowledge of nature, it's stuck,",
-    "fullText": " the leopards linking through the nilgiris. Much of our knowledge of nature, it's stuck,",
+    "timestamp": [92.1, 95.1],
+    "displayText": " No HTML for the chirp of a nightjar",
+    "fullText": " No HTML for the chirp of a nightjar",
+    "asset": "/video/nightjar.mp4",
+    "animation": "slide-in"
+  },
+  {
+    "timestamp": [95.1, 98.1],
+    "displayText": "no CSS for a mossy rock..",
+    "fullText": "no CSS for a mossy rock, no Java script ",
+    "asset": "/video/mossy.mp4",
+    "animation": "fade-in"
+  },
+  {
+    "timestamp": [99.1, 104.3],
+    "displayText": "no Java script to animate the leopards",
+    "fullText": "no Java script to animate the leopards slinking through the nilgiris.",
+    "asset": "/video/leopard.mp4",
+    "animation": "slide-in"
+  },
+  {
+    "timestamp": [104.3, 108.2],
+    "displayText": "Much of our knowledge of nature, it's stuck!",
+    "fullText": "Much of our knowledge of nature, it's stuck,",
     "asset": null,
-    "animation": "typewriter"
+    "animation": "fade-in"
   },
   {
     "timestamp": [108.2, 113.2],
-    "displayText": " and PDFs, field notes, shape files, old photos,",
-    "fullText": " and PDFs, field notes, shape files, old photos,",
-    "asset": null,
+    "displayText": "PDFs, field notes, shape files..",
+    "fullText": " in PDFs, field notes, shape files, old photos",
+    "asset": "/video/stuck.mp4",
     "animation": "typewriter"
   },
   {
@@ -186,55 +249,78 @@
     "displayText": " dusty memories.",
     "fullText": " dusty memories.",
     "asset": null,
-    "animation": "typewriter"
+    "animation": "fade-in"
   },
   {
     "timestamp": [115.88, 119.88],
-    "displayText": " But what if we had an internet for nature?",
+    "displayText": "what if we had an internet for nature?",
     "fullText": " But what if we had an internet for nature?",
     "asset": null,
-    "animation": "typewriter"
+    "animation": "fade-in"
   },
   {
-    "timestamp": [120.84, 124.76],
-    "displayText": " Imagine that, a structured, open Facebook",
-    "fullText": " Imagine that, a structured, open Facebook",
+    "timestamp": [119.88, 119.88],
+    "displayText": "what if we had an internet for nature?",
+    "fullText": " But what if we had an internet for nature?",
     "asset": null,
-    "animation": "typewriter"
+    "animation": "fade-in",
+    "pauseDuration": 0.8
+  },  
+  {
+    "timestamp": [120.84, 122.0],
+    "displayText": " Imagine that",
+    "fullText": " Imagine that",
+    "asset": "/video/owl_hedgehog.mp4",
+    "animation": "pulse" 
   },
   {
-    "timestamp": [124.76, 126.44],
-    "displayText": " for the oak trees,",
-    "fullText": " for the oak trees,",
+    "timestamp": [122.0, 121.9],
+    "displayText": " Imagine that",
+    "fullText": " Imagine that, a structured",
+    "asset": "/video/owl_hedgehog.mp4",
+    "animation": "pulse",
+    "pauseDuration": 1.5
+  },
+  {
+    "timestamp": [121.9, 126.44],
+    "displayText": "Facebook for the oak trees",
+    "fullText": "a structured, open Facebook for the oak trees",
     "asset": null,
-    "animation": "typewriter"
+    "animation": "fade-in"    
   },
   {
     "timestamp": [126.44, 131.52],
-    "displayText": " technology not built for ads, but built for the planet.",     
+    "displayText": " technology built for the planet.",     
     "fullText": " technology not built for ads, but built for the planet.",     
-    "asset": null,
+    "asset": "/video/otter.mp4",
     "animation": "typewriter"
   },
   {
-    "timestamp": [131.52, 140.56],
-    "displayText": " I'd ask it about the Himalayas, about polar bears, about the endangered XYZ trees the rainforests",
+    "timestamp": [131.52, 137.2],
+    "displayText": "I'd ask it about the Himalayas",
     "fullText": " I'd ask it about the Himalayas, about polar bears, about the endangered XYZ trees the rainforests",
-    "asset": null,
+    "asset": "/video/himalayas.mp4",
     "animation": "typewriter"
   },
   {
-    "timestamp": [140.56, 142.8],
-    "displayText": " need to survive.",
-    "fullText": " need to survive.",
+    "timestamp": [137.2, 142.5],
+    "displayText": "",
+    "fullText": "about the endangered XYZ trees the rainforests need to survive.",
+    "asset": "/video/rainforests.mp4",
+    "animation": "slide-in"
+  },  
+  {
+    "timestamp": [142.0, 145.2],
+    "displayText": " And maybe, just maybe..",
+    "fullText": " And maybe, just maybe",
     "asset": null,
-    "animation": "typewriter"
+    "animation": "fade-in"
   },
   {
-    "timestamp": [142.8, 147.76],
-    "displayText": " And maybe, just maybe, we'd remember how to listen,",
-    "fullText": " And maybe, just maybe, we'd remember how to listen,",
-    "asset": null,
+    "timestamp": [145.2, 147.76],
+    "displayText": " ",
+    "fullText": "we'd remember how to listen,",
+    "asset": "/video/whale_drone.mp4",
     "animation": "typewriter"
   },
   {
@@ -242,6 +328,6 @@
     "displayText": " not just to the web, but to the world.",
     "fullText": " not just to the web, but to the world.",
     "asset": null,
-    "animation": "typewriter"
+    "animation": "fade-in"
   }
 ]
