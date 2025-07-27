@@ -1,4 +1,4 @@
-# Mae May Slide (mms)
+# MMS (multimedia short messages) 
 
 An app to automate the creation of short "explainer" videos. 
 
