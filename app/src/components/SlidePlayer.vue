@@ -19,13 +19,25 @@
                 <span class="time-display">{{ formatTime(duration) }}</span>
             </div>
         </div>
-        <div v-if="currentSlide.asset" class="asset-wrapper">
+        
+        <!-- Global video player -->
+        <div v-if="globalVideoSrc" class="asset-wrapper">
+            <video 
+            :src="globalVideoSrc" 
+            :autoplay="isPlaying" 
+            muted
+            loop
+            class="asset-video"
+            ref="globalVideoRef"/>
+        </div>
+        
+        <!-- Per-slide assets (only show if no global video) -->
+        <div v-else-if="currentSlide.asset" class="asset-wrapper">
             <img 
             v-if="isImage(currentSlide.asset)" 
             :src="currentSlide.asset" alt="slide asset" 
             class="asset-image" />
 
-            <!-- TODO(prashanth@): Add a !isForecePaused here to pause video?  -->
             <video 
             v-else 
             :src="currentSlide.asset" 
@@ -51,11 +63,14 @@ const currentSlideIndex = ref(0)
 const currentSlide = ref(null)
 const audioRef = ref(null)
 const videoRef = ref(null)
+const globalVideoRef = ref(null)
 const isPlaying = ref(false)
 const isForcePaused = ref(false)
 const lastPausedIndex = ref(null)
 
-const audioSrc = '/audio/nature_web.mp3'
+// Global audio and video sources
+const audioSrc = ref('')
+const globalVideoSrc = ref('')
 
 // Progress bar for audio 
 const progress = ref(0)
@@ -65,7 +80,13 @@ const isSeeking = ref(false)
 onMounted(async () => {
     const rest = await fetch('/transcript.json')
     const data = await rest.json()
-    slides.value = data.map(
+    
+    // Extract global audio and video sources
+    audioSrc.value = data.audio || ''
+    globalVideoSrc.value = data.video || ''
+    
+    // Process transcript data
+    slides.value = data.transcript.map(
         d => ({
             start: d.start ?? (d.timestamp ? d.timestamp[0] : 0),
             end: d.end ?? (d.timestamp ? d.timestamp[1] : 0),
@@ -115,11 +136,21 @@ onMounted(async () => {
             isForcePaused.value = true
             lastPausedIndex.value = index
             audioRef.value.pause()
+            
+            // Pause global video if it exists
+            if (globalVideoRef.value) {
+                globalVideoRef.value.pause()
+            }
 
             setTimeout(() => {
                 isForcePaused.value = false
                 if (!isPlaying.value) return 
                 audioRef.value.play()
+                
+                // Resume global video if it exists
+                if (globalVideoRef.value) {
+                    globalVideoRef.value.play()
+                }
             }, slide.pauseDuration * 1000)
         } 
     }, 100)
@@ -143,10 +174,16 @@ const toggleAudio = () => {
         if (videoRef.value) {
             videoRef.value.pause()
         }
+        if (globalVideoRef.value) {
+            globalVideoRef.value.pause()
+        }
     } else {
         audioRef.value.play()
         if (videoRef.value) {
             videoRef.value.play()
+        }
+        if (globalVideoRef.value) {
+            globalVideoRef.value.play()
         }
     }
     isPlaying.value = !isPlaying.value

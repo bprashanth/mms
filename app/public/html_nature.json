@@ -1,4 +1,7 @@
-[
+{
+  "audio": "/audio/nature_web.mp3",
+  "video": "/video/mainframe.mp4",
+  "transcript": [
     {
         "start": 0,
         "end": 5,
@@ -11,4 +14,5 @@
         "text": "Back then...  we had no phones—just dirt roads, radio songs, and big dreams.",
         "asset": null
     }
-]
+  ]
+}
