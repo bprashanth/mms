@@ -34,3 +34,26 @@ This will insert a 0.8s pause at `119.88`
     "pauseDuration": 0.8
   },  
 ```
+
+## Audio/Video playback 
+
+There are 2 ways to add video.
+1. Within each transcript section, as shown above
+2. Globally
+
+The global tag overrides the transcript tag, meaning: 
+```json
+{
+  "audio": "/audio/nature_web.mp3",
+  "video": "/video/mainframe.mp4",
+  "transcript": [
+  {
+    "timestamp": [0, 6],
+    "displayText": " In the beginning, there was HTML",
+    "fullText": " In the beginning, there was HTML, hypertext markup language, a way to give plain old text some structure.", 
+    "asset": "/video/text_html.mp4",
+    "animation": "typewriter"
+  },
+```
+
+Will play `mainframe.mp4` in a loop along with `nature_web.mp3` and the transcript text, ignore the `asset` video files. 

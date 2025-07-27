@@ -1,4 +1,7 @@
-[
+{
+  "audio": "/audio/nature_web.mp3",
+  "video": "",
+  "transcript": [
   {
     "timestamp": [0, 6],
     "displayText": " In the beginning, there was HTML",
@@ -330,4 +333,5 @@
     "asset": null,
     "animation": "fade-in"
   }
-]
+  ]
+}
